@@ -9,6 +9,6 @@ jobs:
         run: |
           echo "Hola Mundo"
           pwd
-          ls -lah
-          cat holamundo.txt
+          ls ../ -lah
+          cat ../holamundo.txt
           echo "Fin del Script"
