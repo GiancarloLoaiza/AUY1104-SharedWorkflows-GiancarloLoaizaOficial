@@ -1,7 +1,9 @@
-on: [push]
+on: 
+ [push]
+
 jobs:
-deploy:
-uses: {owner}/AUY1104-SharedWorkflows-GiancarloLoaizaOficial/.github/workflows/deploy-api.yaml@main
-secrets:
-DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+  deploy:
+    uses: {owner}/AUY1104-SharedWorkflows-GiancarloLoaizaOficial/.github/workflows/deploy-api.yaml@main
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
